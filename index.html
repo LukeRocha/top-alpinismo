@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Alpinismo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="logo.png" alt="Top Alpinismo Logo">
+        <span class="header__title">Top Alpinismo</span>
+      </div>
+
+      <nav class="header__nav" id="menu">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#" class="header__link">Home</a></li>
+          <li class="header__item"><a href="#sobre" class="header__link">Sobre</a></li>
+          <li class="header__item"><a href="#servicos" class="header__link">Serviços</a></li>
+          <li class="header__item"><a href="#contato" class="header__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__toggle" id="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Excelência em Alpinismo Industrial</h1>
+      <p class="hero__subtitle">Segurança, profissionalismo e qualidade em cada altura.</p>
+      <a href="#contato" class="hero__button">Solicitar Orçamento</a>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="about">
+    <div class="about__container">
+      <h2 class="about__title">Quem Somos</h2>
+      <p class="about__text">
+        A Top Alpinismo é especializada em serviços de alpinismo industrial, oferecendo soluções 
+        seguras e eficientes para trabalhos em altura. Nosso compromisso é com a segurança, 
+        qualidade e inovação em cada projeto.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section id="servicos" class="services">
+    <div class="services__container">
+      <h2 class="services__title">Nossos Serviços</h2>
+      <div class="services__grid">
+        <div class="services__item">
+          <h3 class="services__item-title">Limpeza em Altura</h3>
+          <p class="services__item-text">Execução de limpezas especializadas em fachadas e estruturas.</p>
+        </div>
+        <div class="services__item">
+          <h3 class="services__item-title">Manutenção Industrial</h3>
+          <p class="services__item-text">Reparos e inspeções em locais de difícil acesso.</p>
+        </div>
+        <div class="services__item">
+          <h3 class="services__item-title">Pintura e Revestimento</h3>
+          <p class="services__item-text">Serviços de pintura com alta durabilidade em ambientes extremos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="contact">
+    <div class="contact__container">
+      <h2 class="contact__title">Fale Conosco</h2>
+      <form class="contact__form">
+        <input type="text" class="contact__input" placeholder="Nome" required>
+        <input type="email" class="contact__input" placeholder="E-mail" required>
+        <textarea class="contact__textarea" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="contact__button">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© 2025 Top Alpinismo - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT MENU ===== -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("header__nav--active");
+    });
+  </script>
+
+</body>
+</html>
