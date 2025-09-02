@@ -4,101 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top Alpinismo</title>
-  <style>
-    :root{
-      --color-primary:#0cbf5d;
-      --color-dark:#141414;
-      --color-light:#ffffff;
-      --color-gray:#f4f4f4;
-      --max-width:1200px;
-    }
-
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{font-family:Inter, system-ui, -apple-system, Arial, sans-serif; color:var(--color-dark); background:var(--color-light); line-height:1.6}
-
-    /* HEADER */
-    .header{background:var(--color-dark); color:var(--color-light); padding:1rem; position:sticky; top:0; z-index:50}
-    .header__container{max-width:var(--max-width); margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:1rem}
-    .header__logo{display:flex;align-items:center;gap:.75rem}
-    .header__logo img{width:44px;height:44px;border-radius:6px;object-fit:cover}
-    .header__title{font-weight:700;font-size:1.15rem}
-
-    .header__menu{display:flex;gap:1.5rem;list-style:none}
-    .header__link{color:var(--color-light); text-decoration:none; font-weight:600}
-    .header__link:hover{color:var(--color-primary)}
-
-    .header__toggle{display:none;background:none;border:0;color:var(--color-light);font-size:1.6rem;padding:.5rem;cursor:pointer}
-
-    /* MOBILE FULLSCREEN SLIDE MENU */
-    .mobile-menu{position:fixed;inset:0;transform:translateX(100%);transition:transform .36s cubic-bezier(.22,.9,.27,1);background:linear-gradient(180deg, rgba(20,20,20,0.98), rgba(12,12,12,0.98));z-index:100;display:flex;flex-direction:column;padding:2rem;align-items:center;justify-content:center}
-    .mobile-menu.open{transform:translateX(0)}
-    .mobile-menu__close{position:absolute;top:18px;right:18px;background:none;border:0;color:var(--color-light);font-size:1.6rem;padding:.5rem;cursor:pointer}
-    .mobile-menu__nav{display:flex;flex-direction:column;gap:1.25rem;align-items:center}
-    .mobile-menu__link{color:var(--color-light);text-decoration:none;font-size:1.4rem;font-weight:700;padding:0.5rem 1rem}
-    .mobile-menu__link:focus{outline:2px solid var(--color-primary);border-radius:6px}
-
-    /* HERO */
-    .hero{position:relative;height:72vh;display:flex;align-items:center;justify-content:center;background:url('https://cdn.pixabay.com/photo/2022/07/19/10/57/men-at-work-7331801_1280.jpg') center/cover no-repeat;color:var(--color-light);text-align:center}
-    .hero__overlay{position:absolute;inset:0;background:rgba(20,20,20,.5)}
-    .hero__content{position:relative;z-index:1;max-width:720px;padding:1rem}
-    .hero__title{font-size:2.25rem;margin-bottom:.75rem}
-    .hero__subtitle{font-size:1.05rem;margin-bottom:1.25rem}
-    .hero__button{background:var(--color-primary);color:var(--color-light);padding:.9rem 1.4rem;border-radius:8px;text-decoration:none;font-weight:700}
-
-    /* SECTIONS */
-    section{padding:3.5rem 1rem}
-    .container{max-width:var(--max-width);margin:0 auto}
-    h2{color:var(--color-primary);font-size:1.6rem;margin-bottom:1rem}
-    p{color:#333}
-
-    /* SERVICES */
-    .services__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:1.25rem}
-    .services__item{background:var(--color-gray);padding:1.25rem;border-radius:10px;display:flex;gap:0.9rem;align-items:flex-start}
-    .services__icon{width:48px;height:48px;flex:0 0 48px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#fff,#f3f3f3)}
-    .services__content{flex:1}
-    .services__item-title{color:var(--color-dark);font-weight:700;margin-bottom:.35rem}
-    .services__item-text{color:#444;font-size:.98rem}
-
-    /* CONTACT */
-    .contact__form{display:flex;flex-direction:column;gap:1rem;max-width:600px;margin:0 auto}
-    .contact__input,.contact__textarea{padding:1rem;border:1px solid #ccc;border-radius:8px}
-    .contact__button{background:var(--color-primary);color:var(--color-light);padding:1rem;border:0;border-radius:8px;font-weight:700;cursor:pointer}
-
-    /* FOOTER */
-    .footer{background:var(--color-dark);color:var(--color-light);padding:2rem 1rem}
-    .footer__inner{max-width:var(--max-width);margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:start;gap:2rem}
-
-    .footer__col{display:flex;flex-direction:column;gap:.5rem}
-
-    .footer__brand .footer__logo{display:flex;align-items:center;gap:.75rem}
-    .footer__logo img{width:64px;height:64px;border-radius:8px}
-    .footer__desc{color:rgba(255,255,255,0.9);line-height:1.5;max-width:320px}
-
-    .footer__heading{color:var(--color-primary);font-weight:800;margin-bottom:.5rem}
-
-    .footer__links .footer__nav{display:flex;flex-direction:column;gap:.45rem}
-    .footer__nav a{color:var(--color-light);text-decoration:none;font-weight:600}
-    .footer__nav a:hover{color:var(--color-primary)}
-
-    /* icones maiores e inline */
-    .footer__socials .social{display:flex;flex-direction:row;gap:.6rem;align-items:center}
-    .social__link{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:999px;background:transparent;border:1px solid rgba(255,255,255,.12);color:var(--color-light);text-decoration:none;transition:all .18s}
-    .social__link svg{width:22px;height:22px}
-    .social__link:hover{border-color:var(--color-primary);color:var(--color-primary);transform:translateY(-3px)}
-
-    .selo img{display:block;margin-top:.9rem;width:110px;height:auto}
-
-    .footer__bottom{margin-top:1.5rem;padding-top:1rem;text-align:center;color:#fff;font-size:0.95rem}
-
-    @media (max-width: 768px){
-      .footer__inner{grid-template-columns:1fr;gap:1rem;text-align:center}
-      .footer__socials .social{justify-content:center}
-      .footer__links .footer__nav{align-items:center}
-      .footer__desc{max-width:100%}
-    }
-
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page">
 
@@ -125,9 +32,25 @@
           <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
         </svg>
       </button>
-
     </div>
   </header>
+
+  <!-- MOBILE FULLSCREEN MENU -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="mobile-menu__close" id="menu-close" aria-label="Fechar menu">
+      <!-- X svg -->
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </button>
+
+    <nav class="mobile-menu__nav" aria-label="Menu principal">
+      <a class="mobile-menu__link" href="#" data-close>Home</a>
+      <a class="mobile-menu__link" href="#sobre" data-close>Sobre</a>
+      <a class="mobile-menu__link" href="#servicos" data-close>Serviços</a>
+      <a class="mobile-menu__link" href="#contato" data-close>Contato</a>
+    </nav>
+  </div>
 
   <!-- MOBILE FULLSCREEN MENU -->
   <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
@@ -290,7 +213,7 @@
             <strong>Top Alpinismo</strong>
           </div>
         </div>
-        <p class="footer__desc">A Top Alpinismo é proativa em seus negócios, garantindo a execução de trabalhos e treinamentos com alta qualidade e avaliando os impactos das atividades junto aos clientes.</p>
+        <p class="footer__desc">Na Top Alpinismo, unimos segurança e qualidade para entregar serviços de alto padrão, com atenção constante aos resultados para nossos clientes.</p>
       </div>
 
       <!-- coluna 2: acesso rápido (central) -->
@@ -299,9 +222,9 @@
         <nav class="footer__nav">
           <a href="#">Home</a>
           <a href="#sobre">Institucional</a>
-          <a href="#servicos">Classificados</a>
-          <a href="#blog">Blog / Artigos</a>
-          <a href="#curriculo">Cadastrar Currículo</a>
+          <!-- <a href="#servicos">Classificados</a> -->
+          <!-- <a href="#blog">Blog / Artigos</a> -->
+          <!-- <a href="#curriculo">Cadastrar Currículo</a> -->
           <a href="#contato">Contato</a>
           <a href="#politica">Política de Privacidade</a>
         </nav>
