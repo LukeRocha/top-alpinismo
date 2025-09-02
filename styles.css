@@ -96,3 +96,89 @@
       .footer__links .footer__nav{align-items:center}
       .footer__desc{max-width:100%}
     }
+
+
+
+    /* ===== ADICIONADO: BANNER CTA e seção PROS (manter conteúdo existente) ===== */
+
+/* Banner CTA (estilo similar à imagem enviada) */
+.banner-cta{
+  background:#585656; /* cor neutra escura que combina com seu tema */
+  color:var(--color-light);
+  padding:38px 0;
+}
+.banner-cta__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.banner-cta__left{flex:1 1 60%}
+.banner-logo{width:48px;height:48px;object-fit:contain;border-radius:6px;background:rgba(255,255,255,0.03);padding:6px;margin-bottom:6px}
+.brand-inline{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.banner-cta__title{
+  font-size:2rem;
+  line-height:1.02;
+  font-weight:700;
+  margin:0 0 6px 0;
+}
+.banner-cta__desc{opacity:0.94;margin:0;color:rgba(255,255,255,0.92);max-width:680px}
+
+/* botão grande à direita */
+.banner-cta__right{flex:0 0 36%;display:flex;justify-content:flex-end}
+.banner-cta__button{
+  display:inline-block;
+  padding:16px 26px;
+  border-radius:8px;
+  font-weight:700;
+  text-decoration:none;
+  background:linear-gradient(180deg,var(--color-primary), color-mix(in srgb,var(--color-primary) 85%, black 15%));
+  color:var(--color-light);
+  min-width:300px;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(0,0,0,0.22);
+  transition:transform .14s ease, box-shadow .14s ease;
+}
+.banner-cta__button:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,0.28)}
+
+/* helper: se preferir o botão amarelo, adicione a classe .use-yellow na section */
+.banner-cta.use-yellow .banner-cta__button{
+  background:linear-gradient(180deg,var(--color-cta, #f2c02e), color-mix(in srgb,var(--color-cta, #f2c02e) 85%, black 15%));
+  color:var(--color-dark);
+}
+
+/* RESPONSIVO */
+@media (max-width:920px){
+  .banner-cta__inner{flex-direction:column;align-items:flex-start;gap:18px}
+  .banner-cta__right{width:100%;justify-content:flex-start}
+  .banner-cta__button{min-width:220px}
+}
+@media (max-width:520px){
+  .banner-cta__title{font-size:1.5rem}
+  .banner-cta__button{width:100%;padding:12px 14px;min-width:0}
+}
+
+/* ===== Seção POR QUE TRABALHAR (pros) ===== */
+.pros{padding:42px 0;background:linear-gradient(180deg,#fff,#fafafa);color:#222}
+.pros > h2{color:var(--color-primary);margin-bottom:6px}
+.pros__intro{color:#666;margin-bottom:12px}
+
+.pros__grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:12px;
+}
+.pros__card{
+  background:#fff;border-radius:10px;padding:16px;display:flex;gap:12px;align-items:flex-start;
+  box-shadow:0 8px 20px rgba(15,15,15,0.04);
+}
+.pros__icon{width:56px;height:56px;border-radius:10px;display:grid;place-items:center;background:var(--color-primary);color:var(--color-light);font-weight:700;font-size:18px;flex:0 0 56px}
+.pros__title{font-weight:700;margin-bottom:6px}
+.pros__text{color:#444;font-size:0.95rem}
+
+/* responsive */
+@media (max-width:920px){ .pros__grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:560px){ .pros__grid{grid-template-columns:1fr} }
+
+/* ===== Fim adicionado ===== */
