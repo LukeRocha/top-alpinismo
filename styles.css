@@ -85,7 +85,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1950&q=80") center/cover no-repeat;
+  background: url("https://cdn.pixabay.com/photo/2022/07/19/10/57/men-at-work-7331801_1280.jpg") center/cover no-repeat;
   color: var(--color-light);
   text-align: center;
 }
@@ -231,3 +231,4 @@ body {
     display: block;
   }
 }
+

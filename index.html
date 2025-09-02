@@ -9,7 +9,7 @@
 <body class="page">
 
   <!-- ===== HEADER ===== -->
-  <header class="header">
+  <!-- <header class="header">
     <div class="header__container">
       <div class="header__logo">
         <img src="logo.png" alt="Top Alpinismo Logo">
@@ -29,8 +29,28 @@
         ☰
       </button>
     </div>
-  </header>
+  </header> -->
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="logo.png" alt="Top Alpinismo Logo">
+      <span class="header__title">Top Alpinismo</span>
+    </div>
 
+    <nav class="header__nav" id="menu">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+        <li class="header__item"><a href="#sobre" class="header__link">Sobre</a></li>
+        <li class="header__item"><a href="#servicos" class="header__link">Serviços</a></li>
+        <li class="header__item"><a href="#contato" class="header__link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__toggle" id="menu-toggle" aria-label="Abrir menu">
+      ☰
+    </button>
+  </div>
+</header>
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero__overlay"></div>
@@ -95,14 +115,15 @@
   </footer>
 
   <!-- ===== SCRIPT MENU ===== -->
-  <script>
-    const toggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-    toggle.addEventListener("click", () => {
-      menu.classList.toggle("header__nav--active");
-    });
-  </script>
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("header__nav--active");
+  });
+</script>
+
 
 </body>
 </html>
