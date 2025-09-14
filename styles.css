@@ -914,3 +914,68 @@ p {
     gap: 10px;
   }
 }
+
+
+
+
+
+
+/* ===== Services icons: layout e cor preta ===== */
+.services__grid { display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+/* badge do ícone */
+.services__icon{
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  /* mantém seu background atual — ajuste se quiser outro tom */
+  background: transparent; /* se tinha verde, pode deixar; aqui mantemos transparente para não sobrescrever */
+  margin-right: 14px;
+  flex: 0 0 auto;
+}
+
+/* tamanho do SVG e cor em preto */
+.services__icon svg{
+  width: 28px;
+  height: 28px;
+  display:block;
+  color: #000;                /* currentColor = preto */
+}
+
+/* garante que paths e strokes usem currentColor (força) */
+.services__icon svg path,
+.services__icon svg rect,
+.services__icon svg circle,
+.services__icon svg line {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+/* -> se quiser manter o badge verde e ICONE PRETO, use:
+.services__icon { background: #e6f7ef; } 
+ou outro verde claro. */
+
+/* alinhamento dos itens */
+.services__item{
+  display:flex;
+  align-items:flex-start;
+  gap: 12px;
+  padding: 14px;
+  background: #fff; /* ajuste para seu card bg */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+}
+
+/* título e texto */
+.services__item-title{ margin:0 0 6px; font-size: 1.06rem; }
+.services__item-text{ margin:0; color: #6b7280; font-size: .95rem; line-height:1.4; }
+
+/* responsividade (opcional) */
+@media (max-width:760px){
+  .services__item{ padding:12px; }
+  .services__icon{ width:56px; height:56px; }
+  .services__icon svg{ width:22px; height:22px; }
+}
