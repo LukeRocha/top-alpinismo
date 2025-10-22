@@ -21,6 +21,15 @@
   --contact-photo: url('./img/alpinist.png');
   --contact-bg: linear-gradient(180deg, #fff, #fafafa);
   --contact-gap: 28px;
+
+
+  /* NOVAS: superfícies off-white */
+  --color-bg: #ede9e9f7;             /* cor de fundo base para páginas/cartões */
+  --color-surface: #ede9e9f7;        /* alias (se quiser diferenciar depois) */
+  --color-surface-2: color-mix(in srgb, #ede9e9f7 88%, white 12%);
+  
+  /* atualiza o gradiente de contato para não ficar branco puro */
+  --contact-bg: linear-gradient(180deg, var(--color-bg), var(--color-surface-2));
 }
 
 * {
@@ -42,7 +51,7 @@ html {
 body {
   font-family: 'Poppins', Inter, system-ui, -apple-system, Arial, sans-serif;
   color: var(--color-dark);
-  background: var(--color-light);
+  background: var(--color-bg);
   line-height: 1.6
 }
 
@@ -71,15 +80,15 @@ body {
 }
 
 .header__logo img {
-  width: 44px;
-  height: 44px;
+  width: 80px;
+  height: 80px;
   border-radius: 6px;
   object-fit: cover
 }
 
 .header__title {
   font-weight: 700;
-  font-size: 1.15rem
+  font-size: 1.95rem
 }
 
 .header__menu {
@@ -238,7 +247,7 @@ p {
 }
 
 .services__item {
-  background: var(--color-gray);
+  background: var(--color-bg);   
   padding: 1.25rem;
   border-radius: 10px;
   display: flex;
@@ -571,7 +580,7 @@ p {
 }
 
 .pros__card {
-  background: #fff;
+  background: #ffffffe3;
   border-radius: 10px;
   padding: 16px;
   display: flex;
@@ -789,13 +798,14 @@ p {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  background: #fff;
+  background: #ffffffee;
   border-radius: 12px;
   padding: 12px;
   box-shadow: var(--card-shadow);
   transition: transform .14s ease, box-shadow .18s ease;
   text-decoration: none;
   color: inherit;
+  
 }
 
 .channel:hover {
@@ -964,7 +974,7 @@ ou outro verde claro. */
   align-items:flex-start;
   gap: 12px;
   padding: 14px;
-  background: #fff; /* ajuste para seu card bg */
+  background: #ffffffea; /* ajuste para seu card bg */
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(2,6,23,0.04);
 }
