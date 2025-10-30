@@ -1,143 +1,143 @@
-  <!doctype html>
-  <html lang="pt-BR">
+<!doctype html>
+<html lang="pt-BR">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Top Alpinismo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Top Alpinismo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__logo">
-          <img src="./img/logo.png" alt="Top Alpinismo logo">
-          <span class="header__title">Top Alpinismo</span>
-        </div>
-
-        <nav class="header__nav" aria-label="Menu" id="desktop-menu">
-          <ul class="header__menu">
-            <li><a class="header__link" href="#">Home</a></li>
-            <li><a class="header__link" href="#sobre">Institucional</a></li>
-            <li><a class="header__link" href="#sobre">Sobre</a></li>
-            <li><a class="header__link" href="#servicos">Serviços</a></li>
-            <li><a class="header__link" href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-
-        <button class="header__toggle" id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false"
-          aria-label="Abrir menu">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true">
-            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-          </svg>
-        </button>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="./img/logo.png" alt="Top Alpinismo logo">
+        <span class="header__title">Top Alpinismo</span>
       </div>
-    </header>
 
-    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
-      <button class="mobile-menu__close" id="menu-close" aria-label="Fechar menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      <nav class="header__nav" aria-label="Menu" id="desktop-menu">
+        <ul class="header__menu">
+          <li><a class="header__link" href="#sobre">Sobre nós</a></li>
+          <li><a class="header__link" href="#servicos">Serviços</a></li>
+          <li><a class="header__link" href="#porque-top">Top Alpinismo</a></li>
+          <li><a class="header__link" href="#footer">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__toggle" id="menu-toggle" aria-controls="mobile-menu" aria-expanded="false"
+        aria-label="Abrir menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
         </svg>
       </button>
-
-      <nav class="mobile-menu__nav" aria-label="Menu principal">
-        <a class="mobile-menu__link" href="#" data-close>Home</a>
-        <a class="mobile-menu__link" href="#sobre" data-close>Sobre</a>
-        <a class="mobile-menu__link" href="#servicos" data-close>Serviços</a>
-        <a class="mobile-menu__link" href="#contato" data-close>Contato</a>
-      </nav>
     </div>
-    <section class="hero">
-      <div class="hero__overlay" aria-hidden="true"></div>
-      <div class="hero__content container">
-        <h1 class="hero__title">Excelência em Alpinismo Industrial</h1>
-        <p class="hero__subtitle" style="color: white">Segurança, profissionalismo e qualidade em cada detalhe.</p>
-        <a href="#contato" class="hero__button btn--primary">Solicite um orçamento com um especialista em altura</a>
-      </div>
-    </section>
+  </header>
 
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2>Quem Somos</h2>
-        <p>Somos uma empresa especializada em alpinismo industrial. Atendemos indústrias, prédios comerciais e obras com
-          equipes certificadas e equipamentos de última geração.</p>
-        <p>Na Top Alpinismo, unimos segurança e qualidade para entregar serviços de alto padrão, com atenção constante aos
-          resultados para nossos clientes.</p>
-      </div>
-    </section>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="mobile-menu__close" id="menu-close" aria-label="Fechar menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 6l12 12M6 18L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </button>
 
-    <section id="porque-top" class="section pros">
-      <div class="container">
-        <h2>Por que trabalhar com a Top Alpinismo</h2>
-        <p class="pros__intro">Alguns motivos que fazem clientes recorrentes escolherem nosso serviço — use isso para dar
-          volume e prova social.</p>
-        <div class="pros__grid">
-          <article class="pros__card">
-            <div class="pros__icon">✓</div>
-            <div>
-              <h3 class="pros__title">Equipe Certificada</h3>
-              <p class="pros__text">Profissionais com NR-35 e treinamentos regulares, com foco em segurança operacional.
-              </p>
-            </div>
-          </article>
-          <article class="pros__card">
-            <div class="pros__icon">⚙</div>
-            <div>
-              <h3 class="pros__title">Equipamentos Atualizados</h3>
-              <p class="pros__text">Sistemas de ancoragem e EPIs com manutenção e certificação em dia.</p>
-            </div>
-          </article>
-          <article class="pros__card">
-            <div class="pros__icon">📋</div>
-            <div>
-              <h3 class="pros__title">Laudos e Relatórios</h3>
-              <p class="pros__text">Inspeções e documentação técnica entregues com clareza e em prazo combinado.</p>
-            </div>
-          </article>
-          <article class="pros__card">
-            <div class="pros__icon">⏱</div>
-            <div>
-              <h3 class="pros__title">Agilidade Operacional</h3>
-              <p class="pros__text">Planejamento que minimiza impacto nas operações do cliente.</p>
-            </div>
-          </article>
-          <article class="pros__card">
-            <div class="pros__icon">🔐</div>
-            <div>
-              <h3 class="pros__title">Conformidade</h3>
-              <p class="pros__text">Procedimentos alinhados às normas vigentes e análise de risco documentada.</p>
-            </div>
-          </article>
-          <article class="pros__card">
-            <div class="pros__icon">🤝</div>
-            <div>
-              <h3 class="pros__title">Atendimento Personalizado</h3>
-              <p class="pros__text">Orçamentos e cronogramas adaptados à sua necessidade com suporte técnico.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <nav class="mobile-menu__nav" aria-label="Menu principal">
+      <a class="mobile-menu__link" href="#" data-close>Home</a>
+      <a class="mobile-menu__link" href="#sobre" data-close>Sobre nós</a>
+      <a class="mobile-menu__link" href="#servicos" data-close>Serviços</a>
+      <a class="mobile-menu__link" href="#porque-top">Top Alpinismo</a>
+      <a class="mobile-menu__link" href="#footer" data-close>Contato</a>
+    </nav>
+  </div>
+  <section class="hero">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title">Excelência em Alpinismo Industrial</h1>
+      <p class="hero__subtitle" style="color: white">Segurança, profissionalismo e qualidade em cada detalhe.</p>
+      <a href="#contato" class="hero__button btn--primary">Solicite um orçamento com um especialista em altura</a>
+    </div>
+  </section>
 
-    <section class="banner-cta">
-      <div class="container banner-cta__inner">
-        <div class="banner-cta__left">
-          <div class="brand-inline"><img src="./img/logo.png" alt="Top Alpinismo" class="banner-logo">
-            <div class="brand-name">Top Alpinismo</div>
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>Somos uma empresa especializada em alpinismo industrial. Atendemos indústrias, prédios comerciais e obras com
+        equipes certificadas e equipamentos de última geração.</p>
+      <p>Na Top Alpinismo, unimos segurança e qualidade para entregar serviços de alto padrão, com atenção constante aos
+        resultados para nossos clientes.</p>
+    </div>
+  </section>
+
+  <section id="porque-top" class="section pros">
+    <div class="container">
+      <h2>Por que trabalhar com a Top Alpinismo</h2>
+      <p class="pros__intro">Alguns motivos que fazem clientes recorrentes escolherem nosso serviço — use isso para dar
+        volume e prova social.</p>
+      <div class="pros__grid">
+        <article class="pros__card">
+          <div class="pros__icon">✓</div>
+          <div>
+            <h3 class="pros__title">Equipe Certificada</h3>
+            <p class="pros__text">Profissionais com NR-35 e treinamentos regulares, com foco em segurança operacional.
+            </p>
           </div>
-          <h2 class="banner-cta__title">Encontre inovação e qualidade<br> para sua empresa!</h2>
-          <p class="banner-cta__desc">Segurança, técnica e profissionais certificados para trabalhos em altura — prontos
-            para atender sua demanda.</p>
-        </div>
-        <div class="banner-cta__right">
-          <a href="#contato" class="banner-cta__button btn--primary">Profissionais Qualificados Aqui</a>
-        </div>
+        </article>
+        <article class="pros__card">
+          <div class="pros__icon">⚙</div>
+          <div>
+            <h3 class="pros__title">Equipamentos Atualizados</h3>
+            <p class="pros__text">Sistemas de ancoragem e EPIs com manutenção e certificação em dia.</p>
+          </div>
+        </article>
+        <article class="pros__card">
+          <div class="pros__icon">📋</div>
+          <div>
+            <h3 class="pros__title">Laudos e Relatórios</h3>
+            <p class="pros__text">Inspeções e documentação técnica entregues com clareza e em prazo combinado.</p>
+          </div>
+        </article>
+        <article class="pros__card">
+          <div class="pros__icon">⏱</div>
+          <div>
+            <h3 class="pros__title">Agilidade Operacional</h3>
+            <p class="pros__text">Planejamento que minimiza impacto nas operações do cliente.</p>
+          </div>
+        </article>
+        <article class="pros__card">
+          <div class="pros__icon">🔐</div>
+          <div>
+            <h3 class="pros__title">Conformidade</h3>
+            <p class="pros__text">Procedimentos alinhados às normas vigentes e análise de risco documentada.</p>
+          </div>
+        </article>
+        <article class="pros__card">
+          <div class="pros__icon">🤝</div>
+          <div>
+            <h3 class="pros__title">Atendimento Personalizado</h3>
+            <p class="pros__text">Orçamentos e cronogramas adaptados à sua necessidade com suporte técnico.</p>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <section class="banner-cta">
+    <div class="container banner-cta__inner">
+      <div class="banner-cta__left">
+        <div class="brand-inline"><img src="./img/logo.png" alt="Top Alpinismo" class="banner-logo">
+          <div class="brand-name">Top Alpinismo</div>
+        </div>
+        <h2 class="banner-cta__title">Encontre inovação e qualidade<br> para sua empresa!</h2>
+        <p class="banner-cta__desc">Segurança, técnica e profissionais certificados para trabalhos em altura — prontos
+          para atender sua demanda.</p>
+      </div>
+      <div class="banner-cta__right">
+        <a href="#contato" class="banner-cta__button btn--primary">Profissionais Qualificados Aqui</a>
+      </div>
+    </div>
+  </section>
 
   <section id="servicos" class="section services">
     <div class="container">
@@ -147,8 +147,9 @@
           <div class="services__icon" aria-hidden="true">
             <!-- Manutenção Industrial: chave inglesa (estilizada) -->
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <path d="M21 3l-3 3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              <path d="M3 21c4-2 6-4 7-6 1-2 1-4 0-5l3-3 3 3c-1 1-3 1-5 0-2-1-4-1-6 1-1 2-3 4-6 7z" fill="currentColor"/>
+              <path d="M21 3l-3 3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <path d="M3 21c4-2 6-4 7-6 1-2 1-4 0-5l3-3 3 3c-1 1-3 1-5 0-2-1-4-1-6 1-1 2-3 4-6 7z"
+                fill="currentColor" />
             </svg>
           </div>
           <div class="services__content">
@@ -160,14 +161,15 @@
           <div class="services__icon" aria-hidden="true">
             <!-- Pintura e Revestimento: rolo de pintura -->
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <rect x="3.5" y="13" width="13.5" height="4" rx="1.2"/>
-              <rect x="15" y="10.8" width="1.8" height="6.5" rx="0.9" transform="rotate(30 15.9 14)"/>
+              <rect x="3.5" y="13" width="13.5" height="4" rx="1.2" />
+              <rect x="15" y="10.8" width="1.8" height="6.5" rx="0.9" transform="rotate(30 15.9 14)" />
               <rect x="6" y="11" width="6" height="2" rx="0.7" />
             </svg>
           </div>
           <div class="services__content">
             <h3 class="services__item-title">Pintura e Revestimento</h3>
-            <p class="services__item-text">Pintura técnica com materiais de alta durabilidade para ambientes externos.</p>
+            <p class="services__item-text">Pintura técnica com materiais de alta durabilidade para ambientes externos.
+            </p>
           </div>
         </div>
 
@@ -176,14 +178,17 @@
             <!-- Instalação de Âncoras: âncora estilizada -->
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
               <circle cx="12" cy="5" r="2" />
-              <path d="M7 12c2 1 4 1 5 1s3 0 5-1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              <path d="M6 18c1-2 3-3 6-3s5 1 7 3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              <rect x="11" y="6" width="2" height="8" rx="0.8"/>
+              <path d="M7 12c2 1 4 1 5 1s3 0 5-1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                fill="none" />
+              <path d="M6 18c1-2 3-3 6-3s5 1 7 3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                fill="none" />
+              <rect x="11" y="6" width="2" height="8" rx="0.8" />
             </svg>
           </div>
           <div class="services__content">
             <h3 class="services__item-title">Instalação de Âncoras</h3>
-            <p class="services__item-text">Fornecemos e instalamos pontos de ancoragem certificados para trabalhos em altura.</p>
+            <p class="services__item-text">Fornecemos e instalamos pontos de ancoragem certificados para trabalhos em
+              altura.</p>
           </div>
         </div>
 
@@ -191,8 +196,9 @@
           <div class="services__icon" aria-hidden="true">
             <!-- Inspeção Técnica: lupa -->
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-              <circle cx="11" cy="11" r="5" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              <line x1="16.5" y1="16.5" x2="21" y2="21" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="11" cy="11" r="5" fill="none" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <line x1="16.5" y1="16.5" x2="21" y2="21" stroke-width="1.8" stroke-linecap="round" />
             </svg>
           </div>
           <div class="services__content">
@@ -200,7 +206,7 @@
             <p class="services__item-text">Inspeções periódicas de ancoragens, cabos e estruturas com laudo técnico.</p>
           </div>
         </div>
-                <div class="services__item">
+        <div class="services__item">
           <div class="services__icon" aria-hidden="true">
             <!-- Limpeza em Altura: vassoura/escova estilizada -->
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -210,7 +216,8 @@
           </div>
           <div class="services__content">
             <h3 class="services__item-title">Limpeza em Altura</h3>
-            <p class="services__item-text">Execução de limpezas especializadas em fachadas e estruturas com técnicas seguras.</p>
+            <p class="services__item-text">Execução de limpezas especializadas em fachadas e estruturas com técnicas
+              seguras.</p>
           </div>
         </div>
 
@@ -218,120 +225,84 @@
     </div>
   </section>
 
-    <footer class="footer">
-      <div class="footer__inner container" role="contentinfo">
-        <div class="footer__col footer__brand">
-          <div class="footer__logo"><img src="./img/logo.png" alt="Top Alpinismo">
-            <div><strong>Top Alpinismo</strong></div>
-          </div>
-          <p class="footer__desc">Unindo segurança e qualidade para entregar serviços de alto padrão</p>
-          <p class="footer__desc">Endereço teste, 1234<br>Bairro teste / SP.</p>
-          <p class="footer__desc">Telefone: (99) 9999-9999</p>
-          <p class="footer__desc">email@mail.com.br</p>
+  <footer id="footer" class="footer">
+    <div class="footer__inner container" role="contentinfo">
+      <div class="footer__col footer__brand">
+        <div class="footer__logo"><img src="./img/logo.png" alt="Top Alpinismo">
+          <div><strong>Top Alpinismo</strong></div>
         </div>
+        <p class="footer__desc">Unindo segurança e qualidade para entregar serviços de alto padrão</p>
+        <p class="footer__desc">Endereço teste, 1234<br>Bairro teste / SP.</p>
+        <p class="footer__desc">Telefone: (99) 9999-9999</p>
+        <p class="footer__desc">email@mail.com.br</p>
+      </div>
 
-        <div class="footer__col footer__links" aria-label="Acesso Rápido">
-          <h3 class="footer__heading">Acesso Rápido</h3>
-          <nav class="footer__nav"><a href="#">Home</a><a href="#sobre">Institucional</a><a href="#servicos">Sobre</a><a
-              href="#blog">Serviços</a><a href="#contato">Contato</a><a href="#politica">Política de Privacidade</a></nav>
-        </div>
+      <div class="footer__col footer__links" aria-label="Acesso Rápido">
+        <h3 class="footer__heading">Acesso Rápido</h3>
+        <nav class="footer__nav"><a href="#">Home</a><a href="#sobre">Institucional</a><a href="#servicos">Sobre</a><a
+            href="#blog">Serviços</a><a href="#contato">Contato</a><a href="#politica">Política de Privacidade</a></nav>
+      </div>
 
-        <div class="footer__col footer__socials" aria-label="Redes Sociais">
-          <h3 class="footer__heading">Redes Sociais</h3>
-          <div class="social">
-            <a class="social__link" href="https://www.facebook.com/profile.php?id=61579936681568" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M18 2h-3a4 4 0 00-4 4v2H8v3h3v7h3v-7h2.5L18 9h-2V6a1 1 0 011-1h1V2z" stroke="currentColor"
-                  stroke-width="0.7" />
-              </svg></a>
-            <a class="social__link" href="#" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="0.8" />
-                <path d="M8 11.8a3.2 3.2 0 106.4 0 3.2 3.2 0 00-6.4 0z" stroke="currentColor" stroke-width="0.8" />
-                <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
-              </svg></a>
-            <a class="social__link" href="#" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"
-                xmlns="https://www.linkedin.com/in/top-alpinismo-9ba540381/" aria-hidden="true">
-                <path
-                  d="M4.98 3.5a2.5 2.5 0 11.04 0H4.98zM3 8.5h4v12H3zM9 8.5h3.8v1.7h.1c.5-.9 1.7-1.8 3.5-1.8 3.8 0 4.5 2.5 4.5 5.7v6.4h-4v-5.7c0-1.4 0-3.1-1.9-3.1-1.9 0-2.2 1.5-2.2 3v5.8H9v-12z"
-                  stroke="currentColor" stroke-width="0.6" />
-              </svg></a>
-            <a class="social__link" href="https://x.com/TopAlpinis46724" title="X" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="gray"
-                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M18.244 2H21.985L14.346 10.59L23.5 22H16.56L11.317 
+      <div class="footer__col footer__socials" aria-label="Redes Sociais">
+        <h3 class="footer__heading">Redes Sociais</h3>
+        <div class="social">
+          <a class="social__link" href="https://www.facebook.com/profile.php?id=61579936681568" title="Facebook"
+            aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <path d="M18 2h-3a4 4 0 00-4 4v2H8v3h3v7h3v-7h2.5L18 9h-2V6a1 1 0 011-1h1V2z" stroke="currentColor"
+                stroke-width="0.7" />
+            </svg></a>
+          <a class="social__link" href="https://www.instagram.com/topalpinismo/" title="Instagram"
+            aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="0.8" />
+              <path d="M8 11.8a3.2 3.2 0 106.4 0 3.2 3.2 0 00-6.4 0z" stroke="currentColor" stroke-width="0.8" />
+              <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+            </svg></a>
+          <a class="social__link" href="#" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none"
+              xmlns="https://www.linkedin.com/in/top-alpinismo-9ba540381/" aria-hidden="true">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 11.04 0H4.98zM3 8.5h4v12H3zM9 8.5h3.8v1.7h.1c.5-.9 1.7-1.8 3.5-1.8 3.8 0 4.5 2.5 4.5 5.7v6.4h-4v-5.7c0-1.4 0-3.1-1.9-3.1-1.9 0-2.2 1.5-2.2 3v5.8H9v-12z"
+                stroke="currentColor" stroke-width="0.6" />
+            </svg></a>
+          <a class="social__link" href="https://x.com/TopAlpinis46724" title="X" aria-label="WhatsApp"><svg
+              viewBox="0 0 24 24" fill="gray" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18.244 2H21.985L14.346 10.59L23.5 22H16.56L11.317 
         15.403L5.322 22H1.58L9.7 12.843L1 2H8.083L12.774 
         7.947L18.244 2ZM17.036 19.796H18.95L7.05 
         4.104H5.003L17.036 19.796Z" />
-                  </svg>
-              </svg></a>
-          </div>
+            </svg>
+            </svg></a>
         </div>
       </div>
-      <div class="fab-container" aria-hidden="false">
-
-        
-
-
-        <button id="fab-top" class="fab fab--top" aria-label="Voltar ao topo" title="Voltar ao topo">
-  <!-- JUMAR / ASCENSOR (sem corda) -->
-  <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-    <!-- corpo geral -->
-    <path d="M6.6 4.2h6.6a3.2 3.2 0 0 1 3.2 3.2v7.5a3.2 3.2 0 0 1-3.2 3.2H10
-             c-1.3 0-2.6-.7-3.3-1.7c-.8-1.2-.5-2.3.7-3.3c.7-.6 1.7-1 2.7-1h1.7"
-          fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- furos superiores -->
-    <circle cx="14.7" cy="6.3" r="1.3" fill="none" stroke="white" stroke-width="1.6"/>
-    <circle cx="12.3" cy="7.0" r="0.9" fill="none" stroke="white" stroke-width="1.4"/>
-
-    <!-- furos inferiores -->
-    <circle cx="8.6"  cy="20.0" r="1.2" fill="none" stroke="white" stroke-width="1.6"/>
-    <circle cx="11.1" cy="21.2" r="0.95" fill="none" stroke="white" stroke-width="1.4"/>
-
-    <!-- empunhadura (alça) -->
-    <path d="M9.2 12.9c-1.3.2-2.6 1.3-2.6 2.7c0 1.7 1.6 3.2 3.5 3.2h3
-             c.9 0 1.6-.7 1.6-1.6v-1.3"
-          fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <!-- came / dentes -->
-    <path d="M12.1 9.3l1.2.6M11.5 10.4l1.2.6M10.9 11.5l1.2.6"
-          fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
-
-    <!-- braço da trava -->
-    <path d="M15.7 8.2l-1.0 1.0m-.6.8l-.6.6"
-          fill="none" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
-  </svg>
-</button>
+    </div>
+    <div class="fab-container" aria-hidden="false">
 
 
 
 
+      <button id="fab-top" class="fab fab--top" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <img style="width: 32px"
+          src="data:image/png;base64,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"
+          alt="ascender">
+      </button>
 
-        <a id="fab-whatsapp" class="fab fab--whatsapp"
-          href="https://wa.me/5511999999999?text=Olá%20Top%20Alpinismo%2C%20gostaria%20de%20um%20orçamento"
-          target="_blank" rel="noopener noreferrer" aria-label="Abrir chat no WhatsApp" title="Fale conosco no WhatsApp">
+      <a id="fab-whatsapp" class="fab fab--whatsapp"
+        href="https://wa.me/5511999999999?text=Olá%20Top%20Alpinismo%2C%20gostaria%20de%20um%20orçamento"
+        target="_blank" rel="noopener noreferrer" aria-label="Abrir chat no WhatsApp" title="Fale conosco no WhatsApp">
+        <img style="width: 32px"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXUlEQVR4nO2aW4hVZRTH9zimzQVtRjMLuprVpEQPSUXRBWqyi1pSgZFQoXQRJzHBp9EeaoSKHkorgl6yez3URBe7aEVFll0stJzRqCyxlKQcHc1pfrFm/lvW7Nlnn33O2buJ8A8Dw7e+b33ru631X2ufIDiE/ymARuBq4H7gNeA74Hdgv/7s/28lsz4zgIbgvwDgcGA28BbwN6WjB1gF3AiMHIoF1AB3AducUfuA1UCrTqbJdhw4TH8NajPZEmCNxoT4BVhom/NvLeJKYIsz4DNgDjC6DF1HAHOBdU7fZuDyvK/RY27Cz4HmDPVPBb50+ldkfjrAeBlu2APMB6oznaR/nmrgTmCvO+2jslJ+oo4beZ3JmShOnvMMYJPm7DQbKlV4pFP4KTA2M2uLz90AfKi57U2Or+RNhNfpY6Auc2uL21AHfOKuWelvxj1su06NuViazo4x7lasKMfFhg879zeR8s3slU1TSwl2YZyYn9DPgtvbWqzhB+DCLBfgASxwj7/4FQMWuTgR62KBk4EdMZTDonNNkAOA4cBXmmdBmgce0o7mBF8fPsBXw4gur2a4JY+FGCzia46fE7mZyFufh0joM119jN3WunYjj4Z1QU4AqpwnvSGpo7FYw5yEPu3qc3OkfSTwm2RnZ7yGgwBu1RxvBAn5RI8YaUECCGyXohNiZMskWxnkGyj3Awdi7RS9Nqwuougv9Rv0qIHjtBm77XFmvIaDAN6TDdPjhA9I2DpIOLDfTvU7JUbWLNmuPEhlCOBuzXNfnNBSUMOMQcKB/Sx5MsyOtJ/qFrkwyBHANaHXjBN2SNhURIlReMMHBY77lTxPwwBMCj1nEIXbzTGDhAP7jQa61PcS1x5meXcEOQMYq7l2xAnNExhGpFB0r/p2hHQBuE5tfwIn5bQG7+oN+4IogO5C3iimb61Lth507c+r7WtgVDBEC9km4TEplU3RKfbaaahtFLDR5TBJ8egssYT6rK/WBgknlaCwRWOMYp+jtuOB79W+KS4NUOXENgAV7iyQHp3VYw+px8y0CjXuEY37FZjoAuMXbpFLwwwTuEhBtVdZXwi72svjGEOC+22PE1rRzLCsDHr9pqPxp7m85nG380b72xz9b3NX7EVXqewBFlcSEK9IQ1EScuswUJobv9jJzndFBBz9HxaTqD0leVeR+d5Xv2mFjOkSGRtXxmJqFQzR1VnsAyNwHvAocI+n/xEd4zR+V8I8jY40xntG4DkpmlfqQjR+mB23u07muaaUMH6mxq1K6HOb+rwepEiaLKWsKmMtoZ7LgK3S1auTujSJuih93qIxixISq9CJzCq2oxvL8V4FCtRtovS4FNVO7AKVeeq1AHu8f7hNrCtS3dla9DOES3fXV7KQSLWy1ZHSJLxQ6N7LO65Xv5Y0Ex+rzrujniWDRZ0LPCwKs0e87EfgGTulIHmsfTsJg2zxj0LATQWDzRABONNxwXSfMir1XFmD/qtpRTnDQ2kHVbu8ZELuVha3px5YK3vWpv7OaMRPgzpzt7K4LY3AR7Jnc0kffETuDMtztTLdm+iULR1piGRUgUViw1W5WZk8/3B5p253nUqjS5ECXaGANMFqu8CTwMuqhZXNACIR24JdGCf6HnZZ396B66XgHdc2UZ+eVzrKEcU3wO1lEs1GcaeQdoRXqfyvxcATfWrgXeBp5RZRWG33JZWE5jo6g05zjWjJtcDplvWpwj9ClGSyiOFSUfGw4IE2qqXiX0AAP8UYvl20YZ7Sy6oYbjZNRYewRFQKDqgwOCuzn3DQfxJ2Cs/quJtKHF+je75E72eDChrd2vmdOsF2EcdpeVZaDiEYYvwDwmQpi4gIWMAAAAAASUVORK5CYII="
+          alt="whatsapp--v1">
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Top Alpinismo - Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img"
-            xmlns="http://www.w3.org/2000/svg">
-            <title>WhatsApp</title>
-            <path fill="#fff"
-              d="M20.52 3.48A11.86 11.86 0 0012 .5C6  .5 1 5.5 1 11.5c0 2.05.55 4.01 1.59 5.73L0.5 23l6.02-1.54A11.86 11.86 0 0012 23.5c6 0 11-5 11-11 0-3.12-1.22-6.05-3.48-8.02zM12 21.5c-1.78 0-3.51-.43-5.04-1.25l-.36-.21-3.58.92.95-3.49-.23-.37A9.25 9.25 0 012.75 11.5c0-5 4.02-9 9-9s9 4 9 9-4.02 9-9 9z" />
-            <path fill="#25D366"
-              d="M17.5 14c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.5.1l-.5.5c-.1.1-.3.2-.6.1-.6-.2-1.8-.9-3-2.3-1.1-1.3-1.5-2.3-1.6-2.4-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.3.3-.4.1-.1.1-.2 0-.4-.1-.1-.5-1.2-.7-1.6-.2-.4-.4-.4-.6-.4-.2 0-.4 0-.6.1-.2.1-.6.3-1 .7-.4.4-.6.9-.6 1.8 0 1.3.5 2.7 1.3 3.8 1.2 1.7 3.5 3.3 5.7 4.1 1.3.4 2 .3 2.8.2.8-.2 1.6-.7 1.9-1.4.2-.5.2-1 .1-1.2-.1-.1-.5-.3-.9-.5z"
-              opacity="0.98" />
-            <path fill="#fff"
-              d="M9.9 8.6c.3-.1.6.1.8.3l.2.3c.1.3 0 .5-.1.8-.1.3-.6 1.3-.8 1.6-.2.3-.3.4-.6.3-.3-.1-1-.6-1.9-1.4-.7-.6-1.1-1.3-1.3-1.7-.2-.4-.1-.7.2-.9.3-.2.5-.3.8-.3.2 0 .5 0 .8.1.4.1 1 .5 1.9 1.2z" />
-          </svg>
-        </a>
-      </div>
-      <div class="footer__bottom">
-        <p>© 2025 Top Alpinismo - Todos os direitos reservados.</p>
-      </div>
-    </footer>
+  <script src="./scripts.js">
 
-    <script src="./scripts.js">
+  </script>
+</body>
 
-    </script>
-  </body>
-
-  </html>
+</html>

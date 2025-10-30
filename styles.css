@@ -1108,3 +1108,23 @@ ou outro verde claro. */
     background-position: center;
   }
 }
+
+
+
+/* Centraliza a marca d’água no menu mobile em qualquer largura */
+.mobile-menu::before{
+  background-position: 50% 50% !important; /* ou: center center */
+}
+
+/* Se você quiser manter via variáveis: sobreescreve quando o menu abre */
+.mobile-menu {
+  --wm-pos-x: 50%;
+  --wm-pos-y: 50%;
+}
+
+/* opcional: garante um tamanho bom no mobile todo */
+@media (max-width: 920px){
+  .mobile-menu{
+    --wm-size: clamp(220px, 64vw, 360px);
+  }
+}
