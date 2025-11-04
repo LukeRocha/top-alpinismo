@@ -1128,3 +1128,34 @@ ou outro verde claro. */
     --wm-size: clamp(220px, 64vw, 360px);
   }
 }
+
+/* Monitor em pé (retrato), ainda "tela grande" */
+@media (orientation: portrait) and (min-width: 700px) {
+  .contact-inner {
+    grid-template-columns: 1fr;   /* empilha texto e foto */
+    row-gap: 18px;
+  }
+
+  .contact-visual {
+    max-width: 380px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .contact-photo {
+    object-fit: contain; 
+  }
+}
+@media (orientation: portrait) and (min-width: 500px) {
+   .hero{
+    background-image: url('./img/hero-background-mobile.png');
+    background-size: cover;          /* pode manter cover aqui */
+    background-position: center;
+  }
+  .contact-visual::before {
+    background-size: contain;        
+    background-position: left;   
+    background-repeat: no-repeat;
+    background-color: #fafafa; 
+  }
+}
